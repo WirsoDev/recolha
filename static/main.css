@@ -1,0 +1,59 @@
+:root {
+    --title-color: #322153;
+}
+
+
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #f0f0f5;
+}
+
+a {
+    text-decoration: none;
+}
+
+#page-home {
+    background: url('../static/src/home-background.svg') no-repeat;
+    height: 100vh;
+    background-position: 35vw bottom;
+}
+
+.containter {
+    width: 90%;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 45px;
+}
+
+header a {
+    display: flex;
+    color: var(--title-color);
+    font-weight: 500;
+}
+
+header a span {
+    margin-right: 15px;
+    background-image: url(../static/src/log-in.svg);
+    width: 20px;
+    height: 20px;
+    display: flex;
+}
+
+main {
+    max-width: 560px;
+}
+
+main h1 {
+    font-size: 50px;
+    color: var(--title-color);
+}
