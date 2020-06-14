@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="static/main.css">
 
-    <link rel="stylesheet" href="static/responsive.css">
+    <link rel="stylesheet" href="static/main.css">
+    <link rel="stylesheet" href="static/create-rec.css">
     <title>criar ponto de recolha</title>
 </head>
 <body>
@@ -16,12 +17,56 @@
 
             <header>
                 <img src="static/src/logo.svg" alt="logo-ecoleta">
-                <a href="#">
+                <a href="index.html">
                 <span></span>
                 Voltar para home</a>
             </header>
 
+            <form action="">
+
+                <h1>Resgisto de ponto de recolha</h1>
+
+                <fieldset>
+                    <legend>
+                        <h2>Dados da empresa</h2>
+                    </legend>
+                    <div class="field">
+                        <label for="name">Nome da empresa</label>
+                        <input type="text" name="name">
+                    </div>
+                    <div class="field-group">
+                        <div class="field">
+                            <label for="address2">Endereço</label>
+                            <input type="text" name="adress2">
+                        </div>
+                        <div class="field">
+                            <label for="address">Numero/complemento</label>
+                            <input type="text" name="adress">
+                        </div>
+                    </div>
+
+                    <div class="field-group">
+                        <div class="field">
+                            <label for="state">Distrito</label>
+                            <select name="uf">
+                                <option value="">Escolhe o distrito</option>
+                            </select>
+                        </div>
+                        <div class="field">
+                            <label for="city">Cidade</label>
+                            <select name="city" disabled>
+                                <option value="">Escolhe a cidade</option>
+                            </select>
+                        </div>
+                    </div>
+
+                </fieldset>
+                <button type="submit">
+                    Registar ponto de recolha</button>
+            </form>
+
     </div>
+    <script src="/scripts/create-rec.js"></script>
 
 </body>
 </html>
