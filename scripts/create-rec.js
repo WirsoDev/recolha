@@ -9,7 +9,7 @@ function populatUfs() {
         c = 0
         for(let state of states.geonames){
 
-            ufSelect.innerHTML += `<option value="${c+1}">${state.name}</option>`
+            ufSelect.innerHTML += `<option value="${state.name}">${state.name}</option>`
             var o = document.getElementsByTagName('option')[c+1]
             o.setAttribute('id', state.geonameId)
             c ++
@@ -35,7 +35,7 @@ function populatUfs() {
             c = 0
             //console.log(states.geonames)
             for(let ct of citysname.geonames){
-                city.innerHTML += `<option value="${c}">${ct.toponymName}</option>`
+                city.innerHTML += `<option value="${ct.toponymName}">${ct.toponymName}</option>`
                 c ++
             }
         } )
