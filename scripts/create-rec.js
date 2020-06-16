@@ -44,7 +44,10 @@ function populatUfs() {
 
 }
 
-
-
 populatUfs()
+
+// itens de recolha 
+
+const itensToSelect = document.querySelectorAll('.itens-grid li')
+
 
