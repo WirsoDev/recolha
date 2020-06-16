@@ -48,6 +48,17 @@ populatUfs()
 
 // itens de recolha 
 
-const itensToSelect = document.querySelectorAll('.itens-grid li')
+const itensToSelect = document.querySelectorAll('.items-grid li')
+
+for (itens of itensToSelect) {
+    itens.addEventListener('click', handlerSelecItem)
+
+}
+
+function handlerSelecItem(event) {
+    // console.log(event.target)
+    handlerSelecItem.setAttribute('selected', true)
+
+}
 
 
