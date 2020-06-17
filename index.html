@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="static/main.css">
     <link rel="stylesheet" href="static/home.css">
+    <link rel="stylesheet" href="static/modal.css">
     <link rel="stylesheet" href="static/responsive.css">
     <title>Recolha</title>
 </head>
@@ -16,7 +17,7 @@
         <div class="containter">
 
             <header>
-                <a href="index.html"><img src="static/src/logo_recolha.svg" alt="logo-ecoleta"></a>
+                <img src="static/src/logo_recolha.svg" alt="logo-ecoleta">
                 <a href="create-rec.html">
                 <span></span>
                 Regista um ponto de recolha</a>
@@ -32,14 +33,23 @@
 
     </div>
 
-    <div id="modal">
+    <div id="modal" class="hide">
         <div class="content">
             <div class="header">
                 <h1>Pontos de recolha</h1>
-                <a href="">Fechar</a>
+                <a href="#">Fechar</a>
             </div>
+            <form action="">
+                <label for="search">Cidade</label>
+                <div class="search field">
+                    <input type="text" name="search" placeholder="Escreve a cidade">
+                    <button>
+                        <img src="/static/src/search.svg" alt="">
+                    </button>
+                </div>
+            </form>
         </div>
     </div>
-
+    <script src="scripts/index.js"></script>
 </body>
 </html>
