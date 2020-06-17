@@ -140,7 +140,7 @@ form button:hover {
 }
 
 .items-grid li.selected {
-    background-color: var( --primary-color);
+    background-color:  #c7ddd1;
     border: 2px solid #2a9c5d;
 }
 

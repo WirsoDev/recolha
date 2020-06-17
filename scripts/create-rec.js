@@ -2,6 +2,7 @@
 const ufSelect = document.querySelector('select[name=uf]')
 const city = document.querySelector('select[name=city]')
 
+
 function populatUfs() {
     fetch('http://www.geonames.org/childrenJSON?geonameId=2264397')
     .then( res => {return res.json()})
@@ -39,10 +40,9 @@ function populatUfs() {
                 c ++
             }
         } )
-
     }
-
 }
+
 
 populatUfs()
 
@@ -52,13 +52,36 @@ const itensToSelect = document.querySelectorAll('.items-grid li')
 
 for (itens of itensToSelect) {
     itens.addEventListener('click', handlerSelecItem)
-
 }
+
+
+const collectedItems = document.querySelector('input[name=items]')
+let selectedItens = []
 
 function handlerSelecItem(event) {
-    // console.log(event.target)
-    handlerSelecItem.setAttribute('selected', true)
+    const itemLi = event.target
+    const itemId = itemLi.dataset.id
+
+    itemLi.classList.toggle('selected')
+
+    const alreadySelected = selectedItens.findIndex( (item) => {
+        return item == itemId
+    } )
+
+    if(alreadySelected >= 0) {
+        const filteredItems = selectedItens.filter( item => {
+            return item != itemId
+        })
+
+        selectedItens = filteredItems
+    }else{
+        selectedItens.push(itemId)
+    }
+
+    collectedItems.value = selectedItens
 
 }
+
+
 
 
