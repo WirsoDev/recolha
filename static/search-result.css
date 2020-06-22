@@ -56,7 +56,7 @@ main .card h1 {
     margin-top: 32px;
     font-size: 36px;
     line-height: 41px;
-    color: #322153;
+    color: var(--blue-color);
 
 }
 
@@ -66,14 +66,14 @@ main .card h3 {
     font-weight: 500;
     font-size: 24px;
     line-height: 34px;
-    color: #34CB79;
+    color: var(--primary-color);
 
 }
 
 main .card p {
     font-size: 16px;
     line-height: 26px;
-    color: #6c6c80;
+    color: var( --blue-two);
 }
 
 body::after {
