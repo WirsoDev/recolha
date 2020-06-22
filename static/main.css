@@ -1,10 +1,18 @@
 :root {
-    --title-color: #626262;
-    --primary-color: #34cb79;
+    --title-color: #0D415D;
+    --primary-color: #A6D406;
+    --sec-color: #7D9F21;
+    --tre-color: #a7d40686;
+    --blue-color: #0D415D;
+    --blue-two: #1D5B79;
 }
 
 h1, h2 {
     color: var(--title-color);
+}
+
+p {
+    color: var(--blue-two);
 }
 
 * {

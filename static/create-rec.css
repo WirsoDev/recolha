@@ -13,7 +13,6 @@
 
 #page-create-point a {
     color: var(--title-color);
-    font-weight: bold;
     display: flex;
     align-items: center;
 }
@@ -104,7 +103,7 @@ form button {
 }
 
 form button:hover {
-    background-color: #2fb86e;
+    background-color: var(--sec-color);
 
 }
 
@@ -140,8 +139,8 @@ form button:hover {
 }
 
 .items-grid li.selected {
-    background-color:  #c7ddd1;
-    border: 2px solid #2a9c5d;
+    background-color: Var(--tre-color);
+    border: 3px solid var(--primary-color);
 }
 
 .items-grid li img,

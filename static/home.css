@@ -1,5 +1,5 @@
 #page-home {
-    background: url('../static/src/home-background.svg') no-repeat;
+    background: url('../static/src/home-background_02.svg') no-repeat;
     height: 100vh;
     background-position: 35vw bottom;
 }
@@ -69,7 +69,7 @@ main a {
 }
 
 main a:hover {
-    background-color: #2fb86e;
+    background-color: var(--sec-color);
 }
 
 main a span {
