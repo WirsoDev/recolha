@@ -23,10 +23,10 @@
 
 #### The site goal is to help people find places to deposit waste near them:
 
-- Bataries
+- Batteries
 - Oil
-- Organic wast
-- Eletronic devices
+- Organic waste
+- Electronic devices
 - Plastics
 - ...
 
