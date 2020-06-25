@@ -1,8 +1,10 @@
-# @ Recolha
+# @ Recolha 
 
 ---
 
 ### The main goal for me with this project is to learn more about JavaScript, and of course, Web development.
+
+<br>
 
 ### Frontend:
 - Html
@@ -11,6 +13,11 @@
 ### backend:
 - Python (flask framework)
 - mySql
+
+<br>
+
+#### WIP
+##### Frontend done, now coming the backend! 
 
 ---
 
@@ -27,3 +34,5 @@
 
 ##### Home page print:
 ![Home Page Recolha](/README_files/HOME_RECOLHA.jpg)
+
+### The site is in Portuguese of course! :)
