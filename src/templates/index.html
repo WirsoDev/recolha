@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="static/main.css">
-    <link rel="stylesheet" href="static/home.css">
-    <link rel="stylesheet" href="static/modal.css">
-    <link rel="stylesheet" href="static/responsive.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/main.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/home.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/modal.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/responsive.css') }}">
     <title>Recolha</title>
 </head>
 <body>
@@ -17,8 +17,8 @@
         <div class="containter">
 
             <header>
-                <img src="static/src/logo_recolha.svg" alt="logo-ecoleta">
-                <a href="create-rec.html">
+                <img src="{{ url_for('static', filename='src/logo_recolha.svg') }}" alt="logo-ecoleta">
+                <a href="{{ url_for('creatRec') }}">
                 <span></span>
                 Regista um ponto de recolha</a>
             </header>
@@ -44,12 +44,12 @@
                 <div class="search field">
                     <input type="text" name="search" placeholder="Escreve a cidade">
                     <button>
-                        <img src="/static/src/search.svg" alt="">
+                        <img src="{{ url_for('static', filename='src/search.svg') }}" alt="">
                     </button>
                 </div>
             </form>
         </div>
     </div>
-    <script src="scripts/index.js"></script>
+    <script src="{{ url_for('static', filename='scripts/index.js') }}"></script>
 </body>
 </html>

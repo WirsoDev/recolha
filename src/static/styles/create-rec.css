@@ -19,7 +19,7 @@
 
 .seta-esquerda {
     margin-right: 16px;
-    background-image: url(../static/src/arrow-left.svg);
+    background-image: url(/static/src/arrow-left.svg);
     width: 20px;
     height: 23px;
     display: flex;
