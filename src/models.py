@@ -29,3 +29,5 @@ class Collectors(db.Model):
     def repr(self):
 
         return f'ID: {self.id} Name: {self.name} | Email: {self.email} | City: {self.city}'
+
+
